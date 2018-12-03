@@ -13372,7 +13372,7 @@ It is a ratio of true positives(words classified as spam, and which are actually
 <strong><strong>1-Gaussian Naive Bayes (GaussianNB) </strong></strong> <br>
 <strong>1.1 real-world application in industry where the model can be applied : </strong><br>
 1- Naive Bayes is often used for spam filtering <br>
-2- document classification 
+2- document classification <br>
 <strong>1.2 the strengths of the model :</strong> <br>
 1-when there are lot of features<br>
 2-t's simple and easy to understand <br>
@@ -13402,8 +13402,8 @@ after one-hot encoding, the dataset contain 103 features so there are a lot numb
 1- The disadvantages are that the theory only really covers the determination of the parameters for a given value of the regularisation and kernel parameters and choice of kernel. In a way the SVM moves the problem of over-fitting from optimising the parameters to model selection.<br>
 2- SVM doesn’t work well.Also this doesn’t work well for large data sets as training time will be cubic of the size of the data set. i.e. lot of data and lots of features, SVM is not preferable. <br>
 <strong>2.4 the model is a good or not to candidate for the problem ? </strong><br>
-good.<br>
-the number of features are not huge.
+i think no because : <br>
+One of the weaknesses of this model as we said in the the weaknesses section is that training can take a long time to training data set and our large datasets can be issue. and also our data is not very clear so may be this lead to the training will not fit good or lead to overfitting.<br>
 <strong> resources : </strong><br>
 <a href="https://data-flair.training/blogs/applications-of-svm/">https://data-flair.training/blogs/applications-of-svm/</a> <br>
 <a href="https://en.wikipedia.org/wiki/Support_vector_machine">https://en.wikipedia.org/wiki/Support_vector_machine</a> <br>
@@ -13420,10 +13420,13 @@ in a wide variety of fields, such as biology, computer vision, and speech proces
 1- in some cases it suffer from overfitting a lot.<br>
 2- sensitive to noisy data and outliers <br>
 <strong>3.4 the model is a good or not to candidate for the problem ? </strong><br>
-good.<br></p>
-<p><strong> resources : </strong><br>
+good.<br>
+this model is a good candidate for the problem as our dataset is large yet clean. Therefore we will be able to perform multiple quick trainining iterations to maximize our overall accuracy on the unseen testing data.<br>
+<strong> resources : </strong><br>
 <a href="https://www.quora.com/What-are-the-pros-and-cons-of-AdaBoost-How-useful-is-it">https://www.quora.com/What-are-the-pros-and-cons-of-AdaBoost-How-useful-is-it</a> <br>
 <a href="http://www.nickgillian.com/wiki/pmwiki.php/GRT/AdaBoost">http://www.nickgillian.com/wiki/pmwiki.php/GRT/AdaBoost</a> <br></p>
+<p><strong>4.so in summary choosing the best model depend on a some of factors like : <br></strong>1.the time required to training or the speed<strong><br></strong>2.the size of data <strong><br></strong>3.if the data is linear or not <strong><br></strong>resources**
+<a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-choice">https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-choice</a></p>
 
 </div>
 </div>
@@ -13715,13 +13718,16 @@ AdaBoost can be used to boost the performance of any machine learning algorithm.
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Answer: </strong> <BR>
-<strong>AdaBoost</strong> can be used to boost the performance of any machine learning algorithm.<br>
-AdaBoost give excellent score with decision trees with one level that used to answer yes or no or in anthor words binary classification problems like great than 50 or less than 50 and this very excellent for our case.<br>
-basically Adaboost model has very good results or high score on training and testing.<br>
-<strong>AdaBoost works by creating a highly accurate classifier by combining many relatively weak and inaccurate classifiers</strong><br>
-but also there are other models give us high score so why i think the best model is Adaboost ??!! .<br>
-when we compare the Adaboost model with others models in other factors or domain like the time required to tarin the model we find the average of all benfits go to the Adaboost model.</p>
+<p><strong>Answer: </strong> <BR> 
+ let us explain the adaboost in simple words : <br>
+ <strong>first what is adaboost model ?</strong> 
+Adaboost is a boosting type ensemble learner. <br>
+ <strong>second : how it work ?</strong><br>
+ it work by combining multi week models to make or create one strong model. <br>
+<strong>third how the model is make the predication ?:</strong> <br>
+This algorithm is trained iteratively<br>. 
+On every next training iteration, the algorithm focuses on missclassified observations from the previous, and tries to classify them correctly.<br>
+the algorithm repeated this  operations until to find the set of weighted hypotheses that combined to make the final model.</p>
 
 </div>
 </div>
